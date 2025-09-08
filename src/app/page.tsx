@@ -173,7 +173,7 @@ export default function Home() {
           </h2>
           <div className="space-y-6">
             {careerSteps.map((step, index) => (
-              <div key={`career-${step.title}-${index}`} className="bg-white dark:bg-db-blue rounded-lg p-6 shadow-lg border border-db-gray-200 dark:border-db-gray-600 hover:shadow-xl transition-shadow">
+              <div key={`career-${step.title}-${index}`} className="bg-db-gray-50 dark:bg-db-gray-800 rounded-lg p-6 shadow-lg border border-db-gray-200 dark:border-db-gray-600 hover:shadow-xl transition-shadow">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
                   <h3 className="text-xl font-semibold text-db-blue dark:text-white">
                     {step.title}
@@ -216,7 +216,7 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {skills.map((skill, index) => (
-              <div key={`skill-${skill.name}-${index}`} className="bg-white dark:bg-db-blue rounded-lg p-4 shadow-lg border border-db-gray-200 dark:border-db-gray-600 hover:shadow-xl transition-shadow">
+              <div key={`skill-${skill.name}-${index}`} className="bg-db-gray-50 dark:bg-db-gray-800 rounded-lg p-4 shadow-lg border border-db-gray-200 dark:border-db-gray-600 hover:shadow-xl transition-shadow">
                 <div className="flex justify-between items-center mb-2">
                   <h3 className="font-semibold text-db-blue dark:text-white">
                     {skill.name}
@@ -240,7 +240,7 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {interests.map((interest, index) => (
-              <div key={`interest-${interest.name}-${index}`} className="bg-white dark:bg-db-blue rounded-lg p-6 shadow-lg border border-db-gray-200 dark:border-db-gray-600 hover:shadow-xl transition-shadow">
+              <div key={`interest-${interest.name}-${index}`} className="bg-db-gray-50 dark:bg-db-gray-800 rounded-lg p-6 shadow-lg border border-db-gray-200 dark:border-db-gray-600 hover:shadow-xl transition-shadow">
                 <div className="flex items-start space-x-4">
                   <div className="text-3xl">{interest.icon}</div>
                   <div>
@@ -264,7 +264,7 @@ export default function Home() {
           </h2>
           <div className="space-y-6">
             {education.map((edu, index) => (
-              <div key={`education-${edu.degree}-${index}`} className="bg-white dark:bg-db-blue rounded-lg p-6 shadow-lg border border-db-gray-200 dark:border-db-gray-600 hover:shadow-xl transition-shadow">
+              <div key={`education-${edu.degree}-${index}`} className="bg-db-gray-50 dark:bg-db-gray-800 rounded-lg p-6 shadow-lg border border-db-gray-200 dark:border-db-gray-600 hover:shadow-xl transition-shadow">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
                   <h3 className="text-xl font-semibold text-db-blue dark:text-white">
                     {edu.degree}
