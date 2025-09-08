@@ -1,0 +1,66 @@
+name: Build Pipeline
+
+on:
+  pull_request:
+    branches:
+      - main
+
+env:
+  NODE_VERSION: '20'
+  PNPM_VERSION: '10.15.1'
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint code
+        run: pnpm run lint
+
+      - name: Type check
+        run: pnpm exec tsc --noEmit
+
+      - name: Test - Start application
+        run: |
+          # Start the application in the background
+          pnpm run dev &
+          APP_PID=$!
+          
+          # Wait for the app to start (give it 10 seconds)
+          sleep 10
+          
+          # Check if the process is still running
+          if kill -0 $APP_PID 2>/dev/null; then
+            echo "✅ Application started successfully"
+            kill $APP_PID
+          else
+            echo "❌ Application failed to start"
+            exit 1
+          fi
+
+      - name: Build Next.js
+        run: pnpm run build
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: webapp-build
+          path: .webapp
