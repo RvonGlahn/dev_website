@@ -1,26 +1,78 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Primary Brand Colors */
+  --db-primary-blue: #1b3139;     /* Deep professional blue */
+  --db-primary-blue-light: #2a4a54; /* Lighter blue variant */
+  --db-orange: #ff5f47;            /* Signature orange */
+  --db-orange-dark: #e5442a;       /* Darker orange for hover states */
+  
+  /* Neutral Colors */
+  --db-gray-50: #f8fafc;           /* Very light gray */
+  --db-gray-100: #f1f5f9;          /* Light gray */
+  --db-gray-200: #e2e8f0;          /* Border gray */
+  --db-gray-300: #cbd5e1;          /* Muted gray */
+  --db-gray-400: #94a3b8;          /* Medium gray */
+  --db-gray-500: #64748b;          /* Text gray */
+  --db-gray-600: #475569;          /* Dark text gray */
+  --db-gray-700: #334155;          /* Very dark gray */
+  --db-gray-800: #1e293b;          /* Near black */
+  --db-gray-900: #0f172a;          /* Black */
+  
+  /* Semantic Colors */
+  --db-background-light: #e2e8f0;   /* Clean white background */
+  --db-background-dark: var(--db-primary-blue); /* Dark mode background */
+  --db-text-primary: var(--db-gray-900);        /* Primary text */
+  --db-text-secondary: var(--db-gray-600);      /* Secondary text */
+  --db-text-muted: var(--db-gray-500);          /* Muted text */
+  
+  /* Legacy support for existing code */
+  --background: var(--db-background-light);
+  --foreground: var(--db-text-primary);
 }
 
 @theme inline {
+  /* Databricks Color System */
+  --color-primary: var(--db-primary-blue);
+  --color-secondary: var(--db-orange);
+  --color-accent: var(--db-orange);
+  
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  
+  /* Brand Colors */
+  --color-db-blue: var(--db-primary-blue);
+  --color-db-blue-light: var(--db-primary-blue-light);
+  --color-db-orange: var(--db-orange);
+  --color-db-orange-dark: var(--db-orange-dark);
+  
+  /* Neutral Scale */
+  --color-db-gray-50: var(--db-gray-50);
+  --color-db-gray-100: var(--db-gray-100);
+  --color-db-gray-200: var(--db-gray-200);
+  --color-db-gray-300: var(--db-gray-300);
+  --color-db-gray-400: var(--db-gray-400);
+  --color-db-gray-500: var(--db-gray-500);
+  --color-db-gray-600: var(--db-gray-600);
+  --color-db-gray-700: var(--db-gray-700);
+  --color-db-gray-800: var(--db-gray-800);
+  --color-db-gray-900: var(--db-gray-900);
+  
+  /* Typography */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: var(--db-background-dark);
+    --foreground: var(--db-gray-100);
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
