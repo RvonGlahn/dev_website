@@ -37,7 +37,7 @@ export default function Home() {
       company: "Deloitte Engineering, Data&AI",
       period: "June 2024 - Present",
       description: "Leading data engineering and AI solution architecture projects. Working with cutting-edge technologies in cloud computing and data analytics to deliver enterprise-scale solutions.",
-      logo: "/logos/deloitte.svg",
+      logo: "/logos/deloitte.jpg",
       website: "https://www.deloitte.com"
     },
     {
@@ -45,7 +45,7 @@ export default function Home() {
       company: "Deloitte",
       period: "March 2023 - July 2024",
       description: "Developed and implemented cloud-based solutions using Azure and modern data platforms. Specialized in building scalable data pipelines and analytics solutions.",
-      logo: "/logos/deloitte.svg",
+      logo: "/logos/deloitte.jpg",
       website: "https://www.deloitte.com"
     },
     {
@@ -53,7 +53,7 @@ export default function Home() {
       company: "Deloitte",
       period: "April 2022 - March 2023",
       description: "Started my journey at Deloitte focusing on cloud solution development. Gained expertise in data engineering, cloud architecture, and modern development practices.",
-      logo: "/logos/deloitte.svg",
+      logo: "/logos/deloitte.jpg",
       website: "https://www.deloitte.com"
     },
     {
@@ -61,7 +61,7 @@ export default function Home() {
       company: "TIB/UB Hannover (Open Research Knowledge Graph)",
       period: "January 2021 - October 2021",
       description: "Worked on Natural Language Processing projects and React development for the Open Research Knowledge Graph initiative. Contributed to cutting-edge research in knowledge representation.",
-      logo: "/logos/tib.svg",
+      logo: "/logos/orkg.svg",
       website: "https://www.tib.eu"
     },
     {
@@ -69,7 +69,7 @@ export default function Home() {
       company: "Hacon",
       period: "March 2019 - June 2020",
       description: "Gained experience in technical project management while studying. Contributed to project planning and coordination in a technology-focused environment.",
-      logo: "/logos/hacon.svg",
+      logo: "/logos/hacon.png",
       website: "https://www.hacon.de"
     }
   ];
@@ -116,7 +116,7 @@ export default function Home() {
       institution: "Leibniz Universität Hannover",
       period: "Oct 2019 - Aug 2022",
       description: "Specialized in Computer Engineering with focus on software systems and data processing.",
-      logo: "/logos/leibniz.svg",
+      logo: "/logos/luh_logo.svg",
       website: "https://www.uni-hannover.de"
     },
     {
@@ -124,7 +124,7 @@ export default function Home() {
       institution: "Leibniz Universität Hannover",
       period: "Oct 2018 - Oct 2019",
       description: "Interdisciplinary program combining engineering and business administration.",
-      logo: "/logos/leibniz.svg",
+      logo: "/logos/luh_logo.svg",
       website: "https://www.uni-hannover.de"
     }
   ];
@@ -173,7 +173,7 @@ export default function Home() {
           </h2>
           <div className="space-y-6">
             {careerSteps.map((step, index) => (
-              <div key={`career-${step.title}-${index}`} className="bg-white dark:bg-db-blue rounded-lg p-6 shadow-lg border border-db-gray-200 dark:border-db-gray-600 hover:shadow-xl transition-shadow">
+              <div key={`career-${step.title}-${index}`} className="bg-db-gray-50 dark:bg-db-gray-800 rounded-lg p-6 shadow-lg border border-db-gray-200 dark:border-db-gray-600 hover:shadow-xl transition-shadow">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
                   <h3 className="text-xl font-semibold text-db-blue dark:text-white">
                     {step.title}
@@ -216,7 +216,7 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {skills.map((skill, index) => (
-              <div key={`skill-${skill.name}-${index}`} className="bg-white dark:bg-db-blue rounded-lg p-4 shadow-lg border border-db-gray-200 dark:border-db-gray-600 hover:shadow-xl transition-shadow">
+              <div key={`skill-${skill.name}-${index}`} className="bg-db-gray-50 dark:bg-db-gray-800 rounded-lg p-4 shadow-lg border border-db-gray-200 dark:border-db-gray-600 hover:shadow-xl transition-shadow">
                 <div className="flex justify-between items-center mb-2">
                   <h3 className="font-semibold text-db-blue dark:text-white">
                     {skill.name}
@@ -240,7 +240,7 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {interests.map((interest, index) => (
-              <div key={`interest-${interest.name}-${index}`} className="bg-white dark:bg-db-blue rounded-lg p-6 shadow-lg border border-db-gray-200 dark:border-db-gray-600 hover:shadow-xl transition-shadow">
+              <div key={`interest-${interest.name}-${index}`} className="bg-db-gray-50 dark:bg-db-gray-800 rounded-lg p-6 shadow-lg border border-db-gray-200 dark:border-db-gray-600 hover:shadow-xl transition-shadow">
                 <div className="flex items-start space-x-4">
                   <div className="text-3xl">{interest.icon}</div>
                   <div>
@@ -264,7 +264,7 @@ export default function Home() {
           </h2>
           <div className="space-y-6">
             {education.map((edu, index) => (
-              <div key={`education-${edu.degree}-${index}`} className="bg-white dark:bg-db-blue rounded-lg p-6 shadow-lg border border-db-gray-200 dark:border-db-gray-600 hover:shadow-xl transition-shadow">
+              <div key={`education-${edu.degree}-${index}`} className="bg-db-gray-50 dark:bg-db-gray-800 rounded-lg p-6 shadow-lg border border-db-gray-200 dark:border-db-gray-600 hover:shadow-xl transition-shadow">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
                   <h3 className="text-xl font-semibold text-db-blue dark:text-white">
                     {edu.degree}
