@@ -1,4 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="146.642" height="56.438" viewBox="0 0 146.642 56.438">
+  <!-- Dark grey background -->
+  <rect width="146.642" height="56.438" rx="4" fill="#4a5568"/>
   <g id="logo" transform="translate(-24.806 -42.086)">
     <g id="Group_2" data-name="Group 2" transform="translate(88.846 58.837)">
       <g id="Group_1" data-name="Group 1">
