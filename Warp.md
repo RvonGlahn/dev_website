@@ -1,0 +1,6 @@
+- Use typescript best pratices
+- Adhere to Next.js Best practices and follow the docs 
+- Keep maintainability of the code in mind
+- Create Components in a separate for UI Parts like Buttons, Images, etc
+- Use conventional branching https://conventional-branch.github.io/ and conventional commits https://conventional-branch.github.io/ for git operations 
+- User prefers using pnpm instead of npm for package management.
