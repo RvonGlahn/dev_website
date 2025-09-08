@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Rasmus - Full Stack Developer",
-  description: "Full Stack Developer & Technology Enthusiast. Passionate about creating innovative solutions with modern technologies.",
+  title: "Rasmus - Cloud Developer",
+  description: "Cloud Developer & Technology Enthusiast. Passionate about creating innovative solutions with modern technologies.",
 };
 
 export default function RootLayout({
