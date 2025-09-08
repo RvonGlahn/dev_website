@@ -37,7 +37,7 @@ export default function Home() {
       company: "Deloitte Engineering, Data&AI",
       period: "June 2024 - Present",
       description: "Leading data engineering and AI solution architecture projects. Working with cutting-edge technologies in cloud computing and data analytics to deliver enterprise-scale solutions.",
-      logo: "/logos/deloitte.svg",
+      logo: "/logos/deloitte.jpg",
       website: "https://www.deloitte.com"
     },
     {
@@ -45,7 +45,7 @@ export default function Home() {
       company: "Deloitte",
       period: "March 2023 - July 2024",
       description: "Developed and implemented cloud-based solutions using Azure and modern data platforms. Specialized in building scalable data pipelines and analytics solutions.",
-      logo: "/logos/deloitte.svg",
+      logo: "/logos/deloitte.jpg",
       website: "https://www.deloitte.com"
     },
     {
@@ -53,7 +53,7 @@ export default function Home() {
       company: "Deloitte",
       period: "April 2022 - March 2023",
       description: "Started my journey at Deloitte focusing on cloud solution development. Gained expertise in data engineering, cloud architecture, and modern development practices.",
-      logo: "/logos/deloitte.svg",
+      logo: "/logos/deloitte.jpg",
       website: "https://www.deloitte.com"
     },
     {
@@ -61,7 +61,7 @@ export default function Home() {
       company: "TIB/UB Hannover (Open Research Knowledge Graph)",
       period: "January 2021 - October 2021",
       description: "Worked on Natural Language Processing projects and React development for the Open Research Knowledge Graph initiative. Contributed to cutting-edge research in knowledge representation.",
-      logo: "/logos/tib.svg",
+      logo: "/logos/orkg.svg",
       website: "https://www.tib.eu"
     },
     {
@@ -69,7 +69,7 @@ export default function Home() {
       company: "Hacon",
       period: "March 2019 - June 2020",
       description: "Gained experience in technical project management while studying. Contributed to project planning and coordination in a technology-focused environment.",
-      logo: "/logos/hacon.svg",
+      logo: "/logos/hacon.png",
       website: "https://www.hacon.de"
     }
   ];
@@ -116,7 +116,7 @@ export default function Home() {
       institution: "Leibniz Universität Hannover",
       period: "Oct 2019 - Aug 2022",
       description: "Specialized in Computer Engineering with focus on software systems and data processing.",
-      logo: "/logos/leibniz.svg",
+      logo: "/logos/luh_logo.svg",
       website: "https://www.uni-hannover.de"
     },
     {
@@ -124,7 +124,7 @@ export default function Home() {
       institution: "Leibniz Universität Hannover",
       period: "Oct 2018 - Oct 2019",
       description: "Interdisciplinary program combining engineering and business administration.",
-      logo: "/logos/leibniz.svg",
+      logo: "/logos/luh_logo.svg",
       website: "https://www.uni-hannover.de"
     }
   ];
