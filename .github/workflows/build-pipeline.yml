@@ -9,6 +9,10 @@ env:
   NODE_VERSION: '20'
   PNPM_VERSION: '10.15.1'
 
+defaults:
+  run:
+    working-directory: ./apps/web
+
 jobs:
   build:
     name: Build and Test
@@ -63,5 +67,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: webapp-build
-          path: ${{ github.workspace }}/.next/**
+          path: apps/web/.next/**
           include-hidden-files: true
