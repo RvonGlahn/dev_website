@@ -59,8 +59,11 @@ jobs:
       - name: Build Next.js
         run: pnpm run build
 
+      - name: Print working directory
+        run: ls -la $GITHUB_WORKSPACE
+
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
           name: webapp-build
-          path: ./.next/
+          path: "${GITHUB_WORKSPACE}/.next/"
